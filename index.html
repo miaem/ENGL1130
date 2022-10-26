@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mapping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+    /* Style the body */
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+
+    main {
+            display: grid;
+            grid-template-rows: minmax(1rem, 1fr) auto minmax(1rem, 2fr);
+            grid-template-columns: minmax(1rem, 1fr) minmax(auto, 50rem) minmax(1rem, 1fr);
+            grid-template-areas: ". . ."
+                ". map ."
+                ". . .";
+        }
+        section{
+            grid-area: map;
+        }
+
+
+    /* Header/Logo Title */
+    .header {
+        padding: 20px;
+        text-align: center;
+        background: #6c6765;
+        color: white;
+        font-size: 25px;
+    }
+
+    /* Page Content */
+    .content {
+        padding:20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* Style the map */
+    .map {
+        padding:20px;
+        text-align: center;
+        background: #dadada;
+    }
+
+    /* Style the footer */
+    .footer {
+        padding:30px;
+        background: #515151;
+
+    /* Style the navigation */
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+   }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #222222;
+    }
+
+    </style>
+    </head> 
+
+    <body>
+        <div>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+        </div>
+
+        <section class="header" id="header">
+            <h1>Mapping</h1>
+            <p><i>The Book of Phoenix</i> </p>
+        </section>
+
+        <section class="map" id="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Wk08uKoWKBTn_Zc9arXk4Ctjthhirh8&hl=en&ehbc=2E312F" width="800" height="550"></iframe>
+            <br>
+            <a href="https://www.google.com/maps/d/embed?mid=1Wk08uKoWKBTn_Zc9arXk4Ctjthhirh8&hl=en&ehbc=2E312F" target="_blank">Click to view map</a>
+        </section>
+
+        <main>
+            
+
+            <section>
+                <div class="content" id="about">
+                    <h1>About</h1>
+                    <i>The Book of Phoenix</i> is a futuristic novel that is very geographically dependent book. The goal of this project is to visualize this book on a map. This interactive map pinpoints important locations in the book as well as the origin of multiple characters. Relationships can be drawn that would not be so apparent without mapping. 
+                    </p>
+                </div>
+            </section>
+
+            <section>
+
+            </section>
+        </main>
+        
+        <div class="footer">
+            
+        </div>
+
+    </body>
+</html>
