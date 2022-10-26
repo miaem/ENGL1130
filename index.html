@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Mapping</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Add icon library -->
+    <title>Mapping</title>
+    <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -13,12 +13,13 @@
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
-            background-color: rgb(198, 195, 195);
+            color: rgb(255, 255, 255);
+            background-color: rgb(58, 58, 58);
         }
 
         main {
             display: grid;
-            grid-template-rows: minmax(1rem, 1fr) auto minmax(1rem, 2fr);
+            grid-template-rows: minmax(1rem, 1fr) auto auto minmax(1rem, 2fr);
             grid-template-columns: minmax(1rem, 1fr) minmax(auto, 45rem) minmax(1rem, 1fr);
             grid-template-areas: ". . ."
                 ". main-content ."
@@ -32,11 +33,17 @@
         /* Style Header */
         .header {
             text-align: center;
-            background: #6c6765;
+            background: #1f1f1f;
             width: 100%;
             height: 250px;
             color: white;
             font-size: 25px;
+        }
+
+        .subheader {
+            text-align: center;
+            color: white;
+            font-size: 16px;
         }
 
         /* Page Content */
@@ -45,16 +52,16 @@
             text-align: center;
         }
 
-        /* Style the map */
-        .map {
-            padding: 20px;
-            text-align: center;
+        /* Style the findings */
+        .findings {
+            padding: 30px;
+            text-align: left;
         }
 
         /* Style the footer */
         .footer {
             padding: 15px;
-            background: #6b6b6b;
+            background: #1f1f1f;
             text-align: center;
             font-size: 10px;
             color: white;
@@ -72,7 +79,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: rgb(17, 17, 17);
         }
 
         li {
@@ -88,11 +95,7 @@
         }
 
         li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #222222;
+            background-color: rgb(0, 0, 0);
         }
 
         .title {
@@ -124,20 +127,22 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
             <div class="title">
                 ENGL 1130
             </div>
-            <div class="nav-right">
-                <li><a href="page2.html" target="_self">Findings</a></li>
+            <div class="navbar">
+                <li><a href="#findings">Findings</a></li>
                 <li><a href="#map">Map</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a class="active" href="javascript:void();">Home</a></li>
+                <li><a href="#top">Home</a></li>
             </div>
         </ul>
     </nav>
 
+    <!-- Header -->
     <div class="header" id="header">
         <br><br>
         <h1>Mapping</h1>
@@ -146,8 +151,10 @@
 
     <main>
         <section>
-            <div class="content" id="about">
-                <h1>About</h1>
+            <div class="content">
+                <div class="subheader" id="about">
+                    <h1>About</h1>
+                </div>
                 <i>The Book of Phoenix</i> is a futuristic novel that is very geographically dependent. The goal of this
                 project is to visualize this book on a map. This interactive map pinpoints important locations as well
                 as the origin of multiple characters. Connections and relationships can be explored that would not be so
@@ -155,13 +162,64 @@
                 </p>
             </div>
 
-            <div class="map" id="map">
-                <h1>Map</h1>
+            <div class="content">
+                <div class="subheader" id="about">
+                    <h1>Map</h1>
+                </div>
                 <iframe src="https://www.google.com/maps/d/embed?mid=1Wk08uKoWKBTn_Zc9arXk4Ctjthhirh8&hl=en&ehbc=2E312F"
                     width="100%" height="550"></iframe>
                 <br>
                 <a href="https://www.google.com/maps/d/embed?mid=1Wk08uKoWKBTn_Zc9arXk4Ctjthhirh8&hl=en&ehbc=2E312F"
-                    target="_blank">Click to view map</a>
+                    target="_blank" style="color:#48ff8e">Click to view map</a>
+            </div>
+
+            <div class="findings">
+                <div class="subheader" id="findings">
+                    <h1>Findings</h1>
+                </div>
+                <h3>Towers</h3>
+                All of the towers are spread across the United States. They are located in large, populated cities near
+                the coast. Why though? My hypothesis is that locating the towers in a populated area helped integrate
+                the idea of medical exploitation and experimentation in society to make it publicly acceptable.
+                Surrounding these towers with people made it seem like the Big Eye had nothing to hide and what they
+                were doing was ethical. If, lets say, Okorafor chose to locate the towers in a rural setting with a low
+                population of people, the towers would be seen as secretive and raise suspicion. Ironically, the towers
+                attract less attention when centered in populated areas.
+                <br><br>
+                We know have an idea as to why the towers are in popular cities but why near the coast? This may seem
+                more obvious, but Okorafor is most likely trying to allude to slave trade. It was easier to import and
+                export people from the coastline, especially considering that they would be arriving by boat.
+                <br><br>
+                Another thing to note is that these towers are not concentrated in one place. They are spread across the
+                US. The dispersion of the towers may be a way to alienate and isolate the specimen. Distribution the
+                towers in this way also disconnect them. Restricting communication could be a way of preventing
+                rebellion.
+                <br><br>
+                Isolating the towers to locations on Earth may be playing into the genre of science fiction, considering
+                that this book is of that genre. Each tower could be compared to different plants that contain
+                "outsiders" or "aliens."
+                <h3>Slave Trade Route</h3>
+                Phoenix's path throughout the book mimics the slave trade route. She does this to demonstrate her
+                frustration with history but also help remember it. Travelling cross-continentally also plays on her
+                idea of Africanfuturism. If Phoenix did not travel to Ghana, the activity of the book would have been
+                geographically concentrated in the US. Visually, there is a lot of water crossed. Crossing from America
+                to Ghana or vice versa is done via land (Saeed), sea (Specimen) and air (Phoenix).
+                <h3>Origin</h3>
+                The characters and specimen originate from North, East and West Africa, but mostly West Africa. In
+                history, a majority of all people enslaved in the US came from West and Central Africa. In relation to
+                the slave trade route, obtaining slaves from these locations made it easier to transport them. The very
+                high concentration of people from Africa who are taken away from their countries contrast with the
+                location of activity in the book, highlighting the exploitation of African for economic interests.
+                <h3>Explosions</h3>
+                Phoenix's first and last explosion were located in New York. Her cyclical journey also reflects the
+                slave trade route. These explosions may reflect revenge and frustration with the route in attempt to
+                both remember and destroy the past.
+                <h3>West vs. East</h3>
+                There are distinct differences based on geography in this book. Almost all of the specimen are from the
+                East. They are all located at the Towers in the West. Black bodies are treated differently across the
+                water. In the East, black patients are treated with care in an ethical way. In the West, black bodies
+                are medically exploited in an unethical way. People also view Phoenix differently across regions. People
+                in Ghana see Phoenix as a savior. Americans consider Phoenix to be a villain.
             </div>
         </section>
     </main>
